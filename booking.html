@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking | Juu Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Juu Restaurant</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Book a Table</h2>
+
+    <form>
+      <fieldset>
+        <legend>information ka martida</legend>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required /><br><br>
+         
+        <label >guest info:</label>
+        <input type="text" placeholder="guest info"><br><br>
+
+        <label for="dalab">dalabkaaga:</label>
+        <select id="dalabkaga" name="dalabkaga" required>
+          <option value="">deey dalabka</option>
+          <option value="food">bariis iyo dooro</option>
+          <option value="food">Baasto iyo moos</option>
+          <option value="food">sabayad iyo maraq</option>
+        </select>
+
+        <p>dalabkaga:</p>
+        <label><input type="radio" name="dalabkaaga" value="macunee" required /> macunee</label>
+        <label><input type="radio" name="dalabkaaga" value="maqaadanee" required /> maqaadanee</label>
+
+        <p>cuntooyinka jeceshahay:</p>
+        <label><input type="checkbox" name="cuntooyinka jeceshahay" value="bariis iyo dooro" /> bariis iyo dooro</label>
+        <label><input type="checkbox" name="cuntooyinka jeceshahay" value="baasto moos" /> baasto moos</label>
+        <label><input type="checkbox" name="cunnooyinka jeceshahay" value="sabayad iyo maraq" /> sabayad iyo maraq</label>
+
+        <label for="comments">Additional comments:</label> <br>
+        <textarea id="comments" name="comments" rows="4" placeholder="fikirkaaga ka bixi..."></textarea>
+        <br><br>
+        <button type="submit">Submit Booking</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Juu Restaurant | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
